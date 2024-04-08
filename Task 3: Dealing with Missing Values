@@ -1,0 +1,16 @@
+// Calculate below the mean for the <code>PayloadMass</code> using the <code>.mean()</code>. Then use the mean and the <code>.replace()</code> function to replace `np.nan` values in the data with the mean you calculated.
+
+# Calculate the mean value of PayloadMass column
+
+# Replace the np.nan values with its mean value
+
+// You should see the number of missing values of the <code>PayLoadMass</code> change to zero.
+
+
+//Now we should have no missing values in our dataset except for in <code>LandingPad</code>.
+
+
+// We can now export it to a <b>CSV</b> for the next section,but to make the answers consistent, in the next lab we will provide data in a pre-selected date range. 
+
+
+<code>data_falcon9.to_csv('dataset_part_1.csv', index=False)</code>
