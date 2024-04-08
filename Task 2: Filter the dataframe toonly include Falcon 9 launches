@@ -1,0 +1,25 @@
+// Finally we will remove the Falcon 1 launches keeping only the Falcon 9 launches. Filter the data dataframe using the <code>BoosterVersion</code> column to only keep the Falcon 9 launches. Save the filtered data to a new dataframe called <code>data_falcon9</code>.
+
+# Hint data['BoosterVersion']!='Falcon 1'
+
+
+//Now that we have removed some values we should reset the FlgihtNumber column
+
+data_falcon9.loc[:,'FlightNumber'] = list(range(1, data_falcon9.shape[0]+1))
+data_falcon9
+
+
+## Data Wrangling
+
+
+// We can see below that some of the rows are missing values in our dataset.
+
+data_falcon9.isnull().sum()
+
+
+// data_falcon9.isnull().sum()Before we can continue we must deal with these missing values. The <code>LandingPad</code> column will retain None values to represent when landing pads were not used.
+
+
+
+
+
